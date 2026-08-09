@@ -1,10 +1,8 @@
-/*
- * Animal Island Theme for Typora
- * Inspired by animal-island-ui (https://github.com/guokaigdg/animal-island-ui)
- * Aesthetic: Animal Crossing — warm cream paper, mint accents, 3D pillow shadows
+mint accents, 3D pillow shadows
  */
 
 :root {
+
 
     /* === Primary (mint / leaf) === */
     --ai-primary:          #19c8b9;
@@ -13,11 +11,11 @@
     --ai-primary-bg:       #e6f9f6;
 
     /* === Text (warm brown) === */
-    --ai-text-main:        #794f27;
-    --ai-text-body:        #725d42;
-    --ai-text-secondary:   #9f927d;
-    --ai-text-muted:       #8a7b66;
-    --ai-text-disabled:    #c4b89e;
+    --ai-text-main:        #000000;
+    --ai-text-body:        #000000;
+    --ai-text-secondary:   #333333;
+    --ai-text-muted:       #555555;
+    --ai-text-disabled:    #888888;
 
     /* === Surfaces (white paper, almost-white desk) === */
     --ai-bg-app:           #faf9f3;   /* desk: near-white with a hint of warmth */
@@ -57,52 +55,55 @@
     --ai-mono:             "JetBrains Mono", "Fira Code", "Cascadia Code",
                            "SF Mono", Consolas, Menlo, monospace;
 
+
 }
 
 /* =========================================================
    App canvas
    ========================================================= */
-.markdown-body, .page-content {
+.markdown-body, .page-content  {
+
 
     font-size: 16px;
 
+
 }
 
-.markdown-body, .page-content {
+.markdown-body, .page-content  {
 
-    background-color: var(--ai-bg-app);
+
     font-family: var(--ai-font);
     color: var(--ai-text-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 0.01em;
 
+
 }
 
-.markdown-body, .page-content {
+.markdown-body, .page-content  {
 
-    max-width: 860px;
-    margin: 30px auto 60px;
-    padding: 52px 64px 96px;
-    background-color: var(--ai-bg-paper);
-    border-radius: var(--ai-radius-lg);
-    box-shadow: var(--ai-shadow-card);
+
     line-height: 1.75;
     font-size: 16px;
     color: var(--ai-text-body);
 
+
 }
 
-.markdown-body > *:first-child, .page-content > *:first-child {
+.markdown-body > *:first-child, .page-content > *:first-child  {
+
 
     margin-top: 0 !important;
+
 
 }
 
 /* =========================================================
    Headings
    ========================================================= */
-.markdown-body h1, .page-content h1, .markdown-body h2, .page-content h2, .markdown-body h3, .page-content h3, .markdown-body h4, .page-content h4, .markdown-body h5, .page-content h5, .markdown-body h6, .page-content h6 {
+.markdown-body h1, .page-content h1, .markdown-body h2, .page-content h2, .markdown-body h3, .page-content h3, .markdown-body h4, .page-content h4, .markdown-body h5, .page-content h5, .markdown-body h6, .page-content h6  {
+
 
     color: var(--ai-text-main);
     font-family: var(--ai-font);
@@ -110,10 +111,12 @@
     letter-spacing: 0.02em;
     line-height: 1.35;
 
+
 }
 
 /* H1 — 居中勋章 · 三色胶囊下划线 */
-.markdown-body h1, .page-content h1 {
+.markdown-body h1, .page-content h1  {
+
 
     font-size: 2.25em;
     font-weight: 900;
@@ -123,9 +126,11 @@
     padding-bottom: 0.5em;
     line-height: 1.3;
 
+
 }
 
-.markdown-body h1::after, .page-content h1::after {
+.markdown-body h1::after, .page-content h1::after  {
+
 
     content: "";
     display: block;
@@ -139,10 +144,12 @@
         var(--ai-primary)   60%, var(--ai-primary)  100%);
     box-shadow: 0 2px 0 0 var(--ai-shadow-input);
 
+
 }
 
 /* H2 — 卡片便签 · 薄荷渐变 + 左厚竖块 */
-.markdown-body h2, .page-content h2 {
+.markdown-body h2, .page-content h2  {
+
 
     font-size: 1.7em;
     font-weight: 800;
@@ -159,10 +166,12 @@
     border-radius: 0 var(--ai-radius) var(--ai-radius) 0;
     box-shadow: 0 2px 0 0 var(--ai-shadow-input);
 
+
 }
 
 /* H3 — 小节 · 左竖线 + 底部虚线 */
-.markdown-body h3, .page-content h3 {
+.markdown-body h3, .page-content h3  {
+
 
     font-size: 1.32em;
     font-weight: 700;
@@ -172,10 +181,12 @@
     border-left: 5px solid var(--ai-primary);
     border-bottom: 2px dashed var(--ai-border-soft);
 
+
 }
 
 /* H4 — 薄荷文字 + 短"记号笔"下划线 */
-.markdown-body h4, .page-content h4 {
+.markdown-body h4, .page-content h4  {
+
 
     font-size: 1.15em;
     font-weight: 800;
@@ -192,10 +203,12 @@
     background-repeat: no-repeat;
     background-size: 100% 3px;
 
+
 }
 
 /* H5 — 米色胶囊贴纸 (inline-block) */
-.markdown-body h5, .page-content h5 {
+.markdown-body h5, .page-content h5  {
+
 
     font-size: 0.98em;
     font-weight: 800;
@@ -207,10 +220,12 @@
     border: 1.5px solid var(--ai-border-soft);
     border-radius: var(--ai-radius-pill);
 
+
 }
 
 /* H6 — 大写微标签 */
-.markdown-body h6, .page-content h6 {
+.markdown-body h6, .page-content h6  {
+
 
     font-size: 0.82em;
     font-weight: 800;
@@ -219,50 +234,62 @@
     letter-spacing: 2px;
     margin: 1em 0 0.3em;
 
+
 }
 
 /* =========================================================
    Paragraph / inline
    ========================================================= */
-.markdown-body p, .page-content p {
+.markdown-body p, .page-content p  {
+
 
     margin: 0.8em 0;
     line-height: 1.8;
 
+
 }
 
-.markdown-body strong, .page-content strong, .markdown-body b, .page-content b {
+.markdown-body strong, .page-content strong, .markdown-body b, .page-content b  {
+
 
     color: var(--ai-text-main);
     font-weight: 800;
 
+
 }
 
-.markdown-body em, .page-content em, .markdown-body i, .page-content i {
+.markdown-body em, .page-content em, .markdown-body i, .page-content i  {
+
 
     color: var(--ai-text-main);
 
+
 }
 
-.markdown-body mark, .page-content mark {
+.markdown-body mark, .page-content mark  {
+
 
     background: var(--ai-focus-yellow);
     color: var(--ai-text-main);
     padding: 0 4px;
     border-radius: 4px;
 
+
 }
 
-.markdown-body del, .page-content del, .markdown-body s, .page-content s {
+.markdown-body del, .page-content del, .markdown-body s, .page-content s  {
+
 
     color: var(--ai-text-disabled);
+
 
 }
 
 /* =========================================================
    Links
    ========================================================= */
-.markdown-body a, .page-content a {
+.markdown-body a, .page-content a  {
+
 
     color: var(--ai-primary-active);
     text-decoration: none;
@@ -270,48 +297,60 @@
     padding: 0 2px;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
+
 }
 
-.markdown-body a:hover, .page-content a:hover {
+.markdown-body a:hover, .page-content a:hover  {
+
 
     color: white;
     background: var(--ai-primary);
     border-bottom-color: transparent;
     border-radius: 5px;
 
+
 }
 
 /* =========================================================
    Lists
    ========================================================= */
-.markdown-body ul, .page-content ul, .markdown-body ol, .page-content ol {
+.markdown-body ul, .page-content ul, .markdown-body ol, .page-content ol  {
+
 
     padding-left: 1.8em;
     margin: 0.7em 0;
 
+
 }
 
-.markdown-body li, .page-content li {
+.markdown-body li, .page-content li  {
+
 
     margin: 0.25em 0;
 
+
 }
 
-.markdown-body ul > li::marker, .page-content ul > li::marker {
+.markdown-body ul > li::marker, .page-content ul > li::marker  {
+
 
     color: var(--ai-primary);
 
+
 }
 
-.markdown-body ol > li::marker, .page-content ol > li::marker {
+.markdown-body ol > li::marker, .page-content ol > li::marker  {
+
 
     color: var(--ai-primary-active);
     font-weight: 800;
 
+
 }
 
 /* Task list — soft 3D checkbox */
-.markdown-body .md-task-list-item > input, .page-content .md-task-list-item > input {
+.markdown-body .md-task-list-item > input, .page-content .md-task-list-item > input  {
+
 
     -webkit-appearance: none;
     appearance: none;
@@ -327,17 +366,21 @@
     transition: all 0.15s;
     position: relative;
 
+
 }
 
-.markdown-body .md-task-list-item > input:checked, .page-content .md-task-list-item > input:checked {
+.markdown-body .md-task-list-item > input:checked, .page-content .md-task-list-item > input:checked  {
+
 
     background: var(--ai-success);
     border-color: var(--ai-success);
     box-shadow: 0 2px 0 0 #5a9e1e;
 
+
 }
 
-.markdown-body .md-task-list-item > input:checked::after, .page-content .md-task-list-item > input:checked::after {
+.markdown-body .md-task-list-item > input:checked::after, .page-content .md-task-list-item > input:checked::after  {
+
 
     content: "";
     position: absolute;
@@ -349,12 +392,14 @@
     border-width: 0 2.5px 2.5px 0;
     transform: rotate(45deg);
 
+
 }
 
 /* =========================================================
    Blockquote — pillow card
    ========================================================= */
-.markdown-body blockquote, .page-content blockquote {
+.markdown-body blockquote, .page-content blockquote  {
+
 
     margin: 1em 0;
     padding: 12px 20px;
@@ -364,174 +409,81 @@
     color: var(--ai-text-body);
     box-shadow: 0 3px 0 0 var(--ai-shadow-input);
 
+
 }
 
-.markdown-body blockquote p, .page-content blockquote p {
+.markdown-body blockquote p, .page-content blockquote p  {
+
 
     margin: 0.4em 0;
 
+
 }
 
-.markdown-body blockquote blockquote, .page-content blockquote blockquote {
+.markdown-body blockquote blockquote, .page-content blockquote blockquote  {
+
 
     background: rgba(255, 255, 255, 0.45);
     border-left-color: var(--ai-warning);
     box-shadow: none;
 
-}
-
-/* =========================================================
-   Code
-   ========================================================= */
-.markdown-body code, .page-content code, .markdown-body tt, .page-content tt {
-
-    font-family: var(--ai-mono);
-    font-size: 0.9em;
-    color: var(--ai-primary-active);
-    background: var(--ai-primary-bg);
-    padding: 2px 8px;
-    border: 1.5px solid #cdeeea;
-    border-radius: 6px;
 
 }
 
-.markdown-body .md-fences, .page-content .md-fences, .markdown-body pre, .page-content pre {
 
-    background: var(--ai-bg-soft);
-    border: 2px solid var(--ai-border-light);
-    border-radius: var(--ai-radius);
-    padding: 16px 20px;
-    margin: 1em 0;
-    box-shadow: 0 3px 0 0 var(--ai-shadow-input);
-    font-family: var(--ai-mono);
-    font-size: 0.92em;
-    color: var(--ai-text-body);
 
-}
 
-.markdown-body .CodeMirror, .page-content .CodeMirror {
 
-    background: transparent !important;
-    font-family: var(--ai-mono) !important;
 
-}
 
-.markdown-body .CodeMirror-gutters, .page-content .CodeMirror-gutters {
 
-    background: transparent !important;
-    border-right: 1.5px dashed var(--ai-border-light) !important;
 
-}
 
-.markdown-body .CodeMirror-linenumber, .page-content .CodeMirror-linenumber {
 
-    color: var(--ai-text-disabled) !important;
 
-}
 
-.markdown-body .CodeMirror-cursor, .page-content .CodeMirror-cursor {
 
-    border-left: 2px solid var(--ai-primary-active) !important;
 
-}
 
-.markdown-body .CodeMirror-selected, .page-content .CodeMirror-selected {
 
-    background: var(--ai-focus-yellow) !important;
 
-}
 
-/* === Syntax — applies to ALL CodeMirror instances (fenced + source) === */
 
-/* Markdown headers/formatting — override CodeMirror's default blue */
-.markdown-body .CodeMirror .cm-header, .page-content .CodeMirror .cm-header, .markdown-body .CodeMirror .cm-header-1, .page-content .CodeMirror .cm-header-1, .markdown-body .CodeMirror .cm-header-2, .page-content .CodeMirror .cm-header-2, .markdown-body .CodeMirror .cm-header-3, .page-content .CodeMirror .cm-header-3, .markdown-body .CodeMirror .cm-header-4, .page-content .CodeMirror .cm-header-4, .markdown-body .CodeMirror .cm-header-5, .page-content .CodeMirror .cm-header-5, .markdown-body .CodeMirror .cm-header-6, .page-content .CodeMirror .cm-header-6 {
 
-    color: var(--ai-text-main) !important;
-    font-weight: 800;
 
-}
 
-.markdown-body .CodeMirror .cm-formatting, .page-content .CodeMirror .cm-formatting, .markdown-body .CodeMirror .cm-formatting-header, .page-content .CodeMirror .cm-formatting-header, .markdown-body .CodeMirror .cm-formatting-list, .page-content .CodeMirror .cm-formatting-list, .markdown-body .CodeMirror .cm-formatting-quote, .page-content .CodeMirror .cm-formatting-quote, .markdown-body .CodeMirror .cm-formatting-code, .page-content .CodeMirror .cm-formatting-code, .markdown-body .CodeMirror .cm-formatting-code-block, .page-content .CodeMirror .cm-formatting-code-block, .markdown-body .CodeMirror .cm-formatting-strong, .page-content .CodeMirror .cm-formatting-strong, .markdown-body .CodeMirror .cm-formatting-em, .page-content .CodeMirror .cm-formatting-em, .markdown-body .CodeMirror .cm-formatting-link, .page-content .CodeMirror .cm-formatting-link, .markdown-body .CodeMirror .cm-formatting-link-string, .page-content .CodeMirror .cm-formatting-link-string, .markdown-body .CodeMirror .cm-formatting-image, .page-content .CodeMirror .cm-formatting-image {
 
-    color: var(--ai-primary-active) !important;
-    opacity: 0.9;
 
-}
 
-.markdown-body .CodeMirror .cm-strong, .page-content .CodeMirror .cm-strong {
- color: var(--ai-text-main) !important; font-weight: 800; 
-}
-.markdown-body .CodeMirror .cm-em, .page-content .CodeMirror .cm-em {
- color: #c97d1c !important; font-style: italic; 
-}
-.markdown-body .CodeMirror .cm-link, .page-content .CodeMirror .cm-link {
- color: var(--ai-primary-active) !important; 
-}
-.markdown-body .CodeMirror .cm-url, .page-content .CodeMirror .cm-url {
- color: var(--ai-text-secondary) !important; 
-}
-.markdown-body .CodeMirror .cm-quote, .page-content .CodeMirror .cm-quote {
- color: var(--ai-text-secondary) !important; font-style: italic; 
-}
 
-/* General language syntax (Python/JS/etc) */
-.markdown-body .CodeMirror .cm-keyword, .page-content .CodeMirror .cm-keyword {
- color: #c94444 !important; font-weight: 700; 
-}
-.markdown-body .CodeMirror .cm-atom, .page-content .CodeMirror .cm-atom {
- color: #dba90e !important; 
-}
-.markdown-body .CodeMirror .cm-number, .page-content .CodeMirror .cm-number {
- color: #dba90e !important; 
-}
-.markdown-body .CodeMirror .cm-def, .page-content .CodeMirror .cm-def {
- color: var(--ai-primary-active) !important; font-weight: 700; 
-}
-.markdown-body .CodeMirror .cm-variable, .page-content .CodeMirror .cm-variable, .markdown-body .CodeMirror .cm-variable-2, .page-content .CodeMirror .cm-variable-2, .markdown-body .CodeMirror .cm-variable-3, .page-content .CodeMirror .cm-variable-3 {
- color: var(--ai-text-main) !important; 
-}
-.markdown-body .CodeMirror .cm-property, .page-content .CodeMirror .cm-property {
- color: var(--ai-primary-active) !important; 
-}
-.markdown-body .CodeMirror .cm-operator, .page-content .CodeMirror .cm-operator {
- color: var(--ai-text-main) !important; 
-}
-.markdown-body .CodeMirror .cm-string, .page-content .CodeMirror .cm-string {
- color: #5a9e1e !important; 
-}
-.markdown-body .CodeMirror .cm-string-2, .page-content .CodeMirror .cm-string-2 {
- color: #4a8517 !important; 
-}
-.markdown-body .CodeMirror .cm-comment, .page-content .CodeMirror .cm-comment {
- color: var(--ai-text-disabled) !important; font-style: italic; 
-}
-.markdown-body .CodeMirror .cm-tag, .page-content .CodeMirror .cm-tag {
- color: #c94444 !important; 
-}
-.markdown-body .CodeMirror .cm-attribute, .page-content .CodeMirror .cm-attribute {
- color: #dba90e !important; 
-}
-.markdown-body .CodeMirror .cm-bracket, .page-content .CodeMirror .cm-bracket {
- color: var(--ai-text-secondary) !important; 
-}
-.markdown-body .CodeMirror .cm-builtin, .page-content .CodeMirror .cm-builtin {
- color: var(--ai-primary-active) !important; 
-}
-.markdown-body .CodeMirror .cm-meta, .page-content .CodeMirror .cm-meta {
- color: var(--ai-text-muted) !important; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Inline KaTeX/MathJax */
-.markdown-body .MathJax, .page-content .MathJax, .markdown-body mjx-container, .page-content mjx-container {
+.markdown-body .MathJax, .page-content .MathJax, .markdown-body mjx-container, .page-content mjx-container  {
+
 
     color: var(--ai-text-main);
+
 
 }
 
 /* =========================================================
    Horizontal rule — dashed paw-print path
    ========================================================= */
-.markdown-body hr, .page-content hr {
+.markdown-body hr, .page-content hr  {
+
 
     border: none;
     height: 18px;
@@ -542,12 +494,14 @@
     background-repeat: repeat-x;
     background-position: center;
 
+
 }
 
 /* =========================================================
    Tables
    ========================================================= */
-.markdown-body table, .page-content table {
+.markdown-body table, .page-content table  {
+
 
     border-collapse: separate;
     border-spacing: 0;
@@ -557,15 +511,19 @@
     overflow: hidden;
     box-shadow: var(--ai-shadow-card);
 
+
 }
 
-.markdown-body thead, .page-content thead {
+.markdown-body thead, .page-content thead  {
+
 
     background: var(--ai-primary);
 
+
 }
 
-.markdown-body th, .page-content th {
+.markdown-body th, .page-content th  {
+
 
     color: white;
     font-weight: 800;
@@ -574,50 +532,62 @@
     text-align: left;
     border: none;
 
+
 }
 
-.markdown-body td, .page-content td {
+.markdown-body td, .page-content td  {
+
 
     padding: 10px 16px;
     border-top: 1.5px dashed var(--ai-border-soft);
     color: var(--ai-text-body);
 
+
 }
 
-.markdown-body tbody tr:nth-child(even) td, .page-content tbody tr:nth-child(even) td {
+.markdown-body tbody tr:nth-child(even) td, .page-content tbody tr:nth-child(even) td  {
+
 
     background: var(--ai-bg-soft);
 
+
 }
 
-.markdown-body tbody tr:hover td, .page-content tbody tr:hover td {
+.markdown-body tbody tr:hover td, .page-content tbody tr:hover td  {
+
 
     background: var(--ai-primary-bg);
+
 
 }
 
 /* =========================================================
    Images
    ========================================================= */
-.markdown-body img, .page-content img {
+.markdown-body img, .page-content img  {
+
 
     max-width: 100%;
     border-radius: var(--ai-radius);
     box-shadow: var(--ai-shadow-deep);
 
+
 }
 
-.markdown-body p > img:only-child, .page-content p > img:only-child {
+.markdown-body p > img:only-child, .page-content p > img:only-child  {
+
 
     display: block;
     margin: 1em auto;
+
 
 }
 
 /* =========================================================
    Footnotes
    ========================================================= */
-.markdown-body .md-footnote, .page-content .md-footnote {
+.markdown-body .md-footnote, .page-content .md-footnote  {
+
 
     background: var(--ai-primary-bg);
     color: var(--ai-primary-active);
@@ -625,92 +595,114 @@
     padding: 1px 6px;
     font-weight: 700;
 
+
 }
 
 /* =========================================================
    Selection / focus
    ========================================================= */
-.markdown-body ::selection, .page-content ::selection {
+.markdown-body ::selection, .page-content ::selection  {
+
 
     background: var(--ai-focus-yellow);
     color: var(--ai-text-main);
 
+
 }
 
-.markdown-body .md-focus-container, .page-content .md-focus-container {
+.markdown-body .md-focus-container, .page-content .md-focus-container  {
+
 
     outline: none;
+
 
 }
 
 /* =========================================================
    Sidebar
    ========================================================= */
-.markdown-body .sidebar, .page-content .sidebar, .markdown-body #typora-sidebar, .page-content #typora-sidebar, .markdown-body .sidebar-content, .page-content .sidebar-content, .markdown-body .sidebar-content-content, .page-content .sidebar-content-content, .markdown-body .sidebar-tabs, .page-content .sidebar-tabs {
+.markdown-body .sidebar, .page-content .sidebar, .markdown-body #typora-sidebar, .page-content #typora-sidebar, .markdown-body .sidebar-content, .page-content .sidebar-content, .markdown-body .sidebar-content-content, .page-content .sidebar-content-content, .markdown-body .sidebar-tabs, .page-content .sidebar-tabs  {
+
 
     background-color: var(--ai-bg-app) !important;
     color: var(--ai-text-body) !important;
     font-family: var(--ai-font);
     border-right: 1.5px solid var(--ai-border-soft);
 
+
 }
 
-.markdown-body .sidebar-tabs .sidebar-tab, .page-content .sidebar-tabs .sidebar-tab {
+.markdown-body .sidebar-tabs .sidebar-tab, .page-content .sidebar-tabs .sidebar-tab  {
+
 
     color: var(--ai-text-secondary);
 
+
 }
 
-.markdown-body .sidebar-tabs .sidebar-tab.active, .page-content .sidebar-tabs .sidebar-tab.active {
+.markdown-body .sidebar-tabs .sidebar-tab.active, .page-content .sidebar-tabs .sidebar-tab.active  {
+
 
     color: var(--ai-primary-active);
     border-bottom: 3px solid var(--ai-primary);
 
+
 }
 
-.markdown-body .outline-item, .page-content .outline-item, .markdown-body .file-list-item, .page-content .file-list-item {
+.markdown-body .outline-item, .page-content .outline-item, .markdown-body .file-list-item, .page-content .file-list-item  {
+
 
     border-radius: var(--ai-radius-sm);
     margin: 2px 6px;
     padding: 6px 10px;
     color: var(--ai-text-body);
 
+
 }
 
-.markdown-body .outline-item:hover, .page-content .outline-item:hover, .markdown-body .file-list-item:hover, .page-content .file-list-item:hover {
+.markdown-body .outline-item:hover, .page-content .outline-item:hover, .markdown-body .file-list-item:hover, .page-content .file-list-item:hover  {
+
 
     background: var(--ai-bg-soft) !important;
     color: var(--ai-text-main) !important;
 
+
 }
 
-.markdown-body .outline-active, .page-content .outline-active, .markdown-body .file-list-item-selected, .page-content .file-list-item-selected {
+.markdown-body .outline-active, .page-content .outline-active, .markdown-body .file-list-item-selected, .page-content .file-list-item-selected  {
+
 
     background: var(--ai-primary-bg) !important;
     color: var(--ai-primary-active) !important;
     font-weight: 700;
 
+
 }
 
 /* Search */
-.markdown-body .searchpanel-search-option-btn, .page-content .searchpanel-search-option-btn {
+.markdown-body .searchpanel-search-option-btn, .page-content .searchpanel-search-option-btn  {
+
 
     background: var(--ai-bg-input);
     border: 2px solid var(--ai-border-light);
     border-radius: var(--ai-radius-sm);
+
 
 }
 
 /* =========================================================
    Quick open / find bar
    ========================================================= */
-.markdown-body #typora-quick-open, .page-content #typora-quick-open {
+.markdown-body #typora-quick-open, .page-content #typora-quick-open  {
+
 
     background: var(--ai-bg-app) !important;
 
+
 }
 
-.markdown-body #typora-quick-open-input, .page-content #typora-quick-open-input, .markdown-body .searchpanel-search-input, .page-content .searchpanel-search-input, .markdown-body input[type=], .page-content input[type=] {
+.markdown-body #typora-quick-open-input, .page-content #typora-quick-open-input, .markdown-body .searchpanel-search-input, .page-content .searchpanel-search-input, .markdown-body input[type=], .page-content input[type=]  {
+
 
     background: var(--ai-bg-input);
     border: 2.5px solid var(--ai-border-light) !important;
@@ -720,18 +712,21 @@
     padding: 6px 12px;
     transition: all 0.15s;
 
+
 }
 
-.markdown-body #typora-quick-open-input:focus, .page-content #typora-quick-open-input:focus, .markdown-body input[type=]:focus, .page-content input[type=]:focus {
+.markdown-body #typora-quick-open-input:focus, .page-content #typora-quick-open-input:focus, .markdown-body input[type=]:focus, .page-content input[type=]:focus  {
+
 
     border-color: var(--ai-primary) !important;
     box-shadow: 0 3px 0 0 var(--ai-primary-active);
     outline: none;
 
+
 }
 
-/* Buttons (toolbar / popovers) — 3D pillow */
-.markdown-body button, .page-content button, .markdown-body .btn, .page-content .btn, .markdown-body .export-item, .page-content .export-item {
+.markdown-body .btn, .page-content .btn, .markdown-body .export-item, .page-content .export-item {
+
 
     background: white;
     border: 2px solid var(--ai-border-light);
@@ -742,194 +737,100 @@
     padding: 4px 12px;
     transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-
-.markdown-body button:hover, .page-content button:hover {
-
-    transform: translateY(-1px);
-    box-shadow: 0 4px 0 0 var(--ai-shadow-button);
-    background: var(--ai-bg-soft);
 
 }
 
-.markdown-body button:active, .page-content button:active {
 
-    transform: translateY(2px);
-    box-shadow: 0 1px 0 0 var(--ai-shadow-button);
 
-}
 
-.markdown-body button.primary, .page-content button.primary, .markdown-body .btn-primary, .page-content .btn-primary {
+
+.markdown-body .btn-primary, .page-content .btn-primary {
+
 
     background: var(--ai-primary);
     color: white;
     border-color: var(--ai-primary-active);
     box-shadow: 0 3px 0 0 var(--ai-primary-active);
 
-}
-
-.markdown-body button.primary:hover, .page-content button.primary:hover {
-
-    background: var(--ai-primary-hover);
-    box-shadow: 0 4px 0 0 var(--ai-primary-active);
 
 }
+
+
 
 /* =========================================================
    Footer / status bar
    ========================================================= */
-.markdown-body footer, .page-content footer, .markdown-body #footer, .page-content #footer {
+.markdown-body footer, .page-content footer, .markdown-body #footer, .page-content #footer  {
+
 
     background: var(--ai-bg-app);
     color: var(--ai-text-secondary);
     border-top: 2px dashed var(--ai-border-soft);
     font-family: var(--ai-font);
 
+
 }
 
-.markdown-body .footer-item-info, .page-content .footer-item-info {
+.markdown-body .footer-item-info, .page-content .footer-item-info  {
+
 
     color: var(--ai-text-muted);
 
-}
-
-/* =========================================================
-   Source mode (CodeMirror) — high-contrast markdown source view
-   ========================================================= */
-.markdown-body #typora-source, .page-content #typora-source {
-
-    font-family: var(--ai-mono) !important;
-    background: var(--ai-bg-paper) !important;
-    color: var(--ai-text-body) !important;
 
 }
 
-.markdown-body #typora-source .CodeMirror, .page-content #typora-source .CodeMirror {
 
-    background: var(--ai-bg-paper) !important;
-    color: var(--ai-text-body) !important;
-    font-family: var(--ai-mono) !important;
-    line-height: 1.7;
 
-}
 
-.markdown-body #typora-source .CodeMirror-cursor, .page-content #typora-source .CodeMirror-cursor {
 
-    border-left: 2px solid var(--ai-primary-active) !important;
 
-}
 
-.markdown-body #typora-source .CodeMirror-gutters, .page-content #typora-source .CodeMirror-gutters {
 
-    background: var(--ai-bg-soft) !important;
-    border-right: 1px solid var(--ai-border-light) !important;
 
-}
 
-.markdown-body #typora-source .CodeMirror-linenumber, .page-content #typora-source .CodeMirror-linenumber {
 
-    color: var(--ai-text-secondary) !important;
-    font-weight: 600;
-    padding: 0 8px 0 6px;
 
-}
 
-.markdown-body #typora-source .CodeMirror-selected, .page-content #typora-source .CodeMirror-selected, .markdown-body #typora-source .CodeMirror-line::selection, .page-content #typora-source .CodeMirror-line::selection, .markdown-body #typora-source .CodeMirror-line ::selection, .page-content #typora-source .CodeMirror-line ::selection {
 
-    background: var(--ai-focus-yellow) !important;
 
-}
 
-/* === Markdown source syntax (override default CM blue) === */
-.markdown-body #typora-source .cm-header, .page-content #typora-source .cm-header, .markdown-body #typora-source .cm-header-1, .page-content #typora-source .cm-header-1, .markdown-body #typora-source .cm-header-2, .page-content #typora-source .cm-header-2, .markdown-body #typora-source .cm-header-3, .page-content #typora-source .cm-header-3, .markdown-body #typora-source .cm-header-4, .page-content #typora-source .cm-header-4, .markdown-body #typora-source .cm-header-5, .page-content #typora-source .cm-header-5, .markdown-body #typora-source .cm-header-6, .page-content #typora-source .cm-header-6 {
 
-    color: var(--ai-text-main) !important;
-    font-weight: 800;
 
-}
 
-.markdown-body #typora-source .cm-formatting, .page-content #typora-source .cm-formatting, .markdown-body #typora-source .cm-formatting-header, .page-content #typora-source .cm-formatting-header, .markdown-body #typora-source .cm-formatting-list, .page-content #typora-source .cm-formatting-list, .markdown-body #typora-source .cm-formatting-quote, .page-content #typora-source .cm-formatting-quote, .markdown-body #typora-source .cm-formatting-code, .page-content #typora-source .cm-formatting-code, .markdown-body #typora-source .cm-formatting-code-block, .page-content #typora-source .cm-formatting-code-block {
 
-    color: var(--ai-primary-active) !important;
-    opacity: 0.9;
 
-}
 
-.markdown-body #typora-source .cm-formatting-strong, .page-content #typora-source .cm-formatting-strong, .markdown-body #typora-source .cm-strong, .page-content #typora-source .cm-strong {
 
-    color: var(--ai-text-main) !important;
-    font-weight: 800;
 
-}
 
-.markdown-body #typora-source .cm-formatting-em, .page-content #typora-source .cm-formatting-em, .markdown-body #typora-source .cm-em, .page-content #typora-source .cm-em {
 
-    color: #c97d1c !important;
-    font-style: italic;
 
-}
 
-.markdown-body #typora-source .cm-link, .page-content #typora-source .cm-link, .markdown-body #typora-source .cm-formatting-link, .page-content #typora-source .cm-formatting-link, .markdown-body #typora-source .cm-formatting-link-string, .page-content #typora-source .cm-formatting-link-string {
 
-    color: var(--ai-primary-active) !important;
 
-}
 
-.markdown-body #typora-source .cm-url, .page-content #typora-source .cm-url {
 
-    color: var(--ai-text-secondary) !important;
 
-}
 
-.markdown-body #typora-source .cm-quote, .page-content #typora-source .cm-quote {
 
-    color: var(--ai-text-secondary) !important;
-    font-style: italic;
 
-}
-
-.markdown-body #typora-source .cm-comment, .page-content #typora-source .cm-comment {
-
-    color: var(--ai-text-disabled) !important;
-    font-style: italic;
-
-}
-
-.markdown-body #typora-source .cm-meta, .page-content #typora-source .cm-meta {
- color: var(--ai-text-muted) !important; 
-}
-.markdown-body #typora-source .cm-string, .page-content #typora-source .cm-string {
- color: #5a9e1e !important; 
-}
-.markdown-body #typora-source .cm-tag, .page-content #typora-source .cm-tag {
- color: #c94444 !important; 
-}
-.markdown-body #typora-source .cm-keyword, .page-content #typora-source .cm-keyword {
- color: #c94444 !important; 
-}
-.markdown-body #typora-source .cm-number, .page-content #typora-source .cm-number {
- color: #dba90e !important; 
-}
-.markdown-body #typora-source .cm-variable, .page-content #typora-source .cm-variable {
- color: var(--ai-text-body) !important; 
-}
-.markdown-body #typora-source .cm-def, .page-content #typora-source .cm-def {
- color: var(--ai-primary-active) !important; 
-}
 
 /* =========================================================
    Misc UI
    ========================================================= */
-.markdown-body .popover-title, .page-content .popover-title {
+.markdown-body .popover-title, .page-content .popover-title  {
+
 
     background: var(--ai-primary-bg);
     color: var(--ai-primary-active);
     border-radius: var(--ai-radius-sm) var(--ai-radius-sm) 0 0;
     font-weight: 800;
 
+
 }
 
-.markdown-body .popover, .page-content .popover {
+.markdown-body .popover, .page-content .popover  {
+
 
     background: var(--ai-bg-paper);
     border: 2px solid var(--ai-border-light);
@@ -937,22 +838,28 @@
     box-shadow: var(--ai-shadow-large);
     color: var(--ai-text-body);
 
+
 }
 
-.markdown-body .popover.bottom > .arrow:after, .page-content .popover.bottom > .arrow:after {
- border-bottom-color: var(--ai-bg-paper); 
-}
-.markdown-body .popover.top    > .arrow:after, .page-content .popover.top    > .arrow:after {
+
+.markdown-body .popover.top    > .arrow:after, .page-content .popover.top    > .arrow:after  {
+
  border-top-color: var(--ai-bg-paper); 
+
 }
-.markdown-body .popover.left   > .arrow:after, .page-content .popover.left   > .arrow:after {
+.markdown-body .popover.left   > .arrow:after, .page-content .popover.left   > .arrow:after  {
+
  border-left-color: var(--ai-bg-paper); 
+
 }
-.markdown-body .popover.right  > .arrow:after, .page-content .popover.right  > .arrow:after {
+.markdown-body .popover.right  > .arrow:after, .page-content .popover.right  > .arrow:after  {
+
  border-right-color: var(--ai-bg-paper); 
+
 }
 
-.markdown-body .tip, .page-content .tip, .markdown-body .tooltip, .page-content .tooltip {
+.markdown-body .tip, .page-content .tip, .markdown-body .tooltip, .page-content .tooltip  {
+
 
     background: var(--ai-text-main);
     color: white;
@@ -960,33 +867,41 @@
     box-shadow: var(--ai-shadow-card);
     font-family: var(--ai-font);
 
+
 }
 
 /* Auto-suggest / dropdown */
-.markdown-body .auto-suggest-container, .page-content .auto-suggest-container, .markdown-body .dropdown-menu, .page-content .dropdown-menu {
+.markdown-body .auto-suggest-container, .page-content .auto-suggest-container, .markdown-body .dropdown-menu, .page-content .dropdown-menu  {
+
 
     background: var(--ai-bg-paper);
     border: 2px solid var(--ai-border-light);
     border-radius: var(--ai-radius);
     box-shadow: var(--ai-shadow-large);
 
+
 }
 
-.markdown-body .dropdown-menu > li > a, .page-content .dropdown-menu > li > a {
+.markdown-body .dropdown-menu > li > a, .page-content .dropdown-menu > li > a  {
+
 
     color: var(--ai-text-body);
 
+
 }
 
-.markdown-body .dropdown-menu > li > a:hover, .page-content .dropdown-menu > li > a:hover {
+.markdown-body .dropdown-menu > li > a:hover, .page-content .dropdown-menu > li > a:hover  {
+
 
     background: var(--ai-primary-bg);
     color: var(--ai-primary-active);
 
+
 }
 
 /* Modal */
-.markdown-body .modal-content, .page-content .modal-content {
+.markdown-body .modal-content, .page-content .modal-content  {
+
 
     background: var(--ai-bg-paper);
     border: 2px solid var(--ai-border-light);
@@ -994,58 +909,54 @@
     box-shadow: var(--ai-shadow-large);
     color: var(--ai-text-body);
 
+
 }
 
 /* Scrollbar */
-.markdown-body ::-webkit-scrollbar, .page-content ::-webkit-scrollbar {
+.markdown-body ::-webkit-scrollbar, .page-content ::-webkit-scrollbar  {
+
 
     width: 10px;
     height: 10px;
 
+
 }
 
-.markdown-body ::-webkit-scrollbar-track, .page-content ::-webkit-scrollbar-track {
+.markdown-body ::-webkit-scrollbar-track, .page-content ::-webkit-scrollbar-track  {
+
 
     background: var(--ai-bg-app);
 
+
 }
 
-.markdown-body ::-webkit-scrollbar-thumb, .page-content ::-webkit-scrollbar-thumb {
+.markdown-body ::-webkit-scrollbar-thumb, .page-content ::-webkit-scrollbar-thumb  {
+
 
     background: var(--ai-border-light);
     border-radius: var(--ai-radius-pill);
     border: 2px solid var(--ai-bg-app);
 
+
 }
 
-.markdown-body ::-webkit-scrollbar-thumb:hover, .page-content ::-webkit-scrollbar-thumb:hover {
+.markdown-body ::-webkit-scrollbar-thumb:hover, .page-content ::-webkit-scrollbar-thumb:hover  {
+
 
     background: var(--ai-primary);
+
 
 }
 
 /* =========================================================
    Print
    ========================================================= */
-@media print {
-
-    .markdown-body, .page-content {
-
-        background: white;
-    
-}
-    .markdown-body, .page-content {
-
-        box-shadow: none;
-        background: white;
-        max-width: 100%;
-        padding: 0;
-    
-}
-    .markdown-body .md-fences, .page-content .md-fences, .markdown-body pre, .page-content pre, .markdown-body blockquote, .page-content blockquote, .markdown-body table, .page-content table {
+@media print  {
+    .markdown-body blockquote, .page-content blockquote, .markdown-body table, .page-content table {
 
         box-shadow: none;
     
 }
+
 
 }
