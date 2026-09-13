@@ -27,10 +27,11 @@
 <meta property="og:description" content="也许你读完了这篇文章， [解密隐私！你的朋友圈照片是怎么暴露你的？]  但是你仍然对硬核分析环节有一种“意犹未尽”的感觉—— 那么你可能就要看看这篇OSINT实战了：我将会用自己例子告诉你。  免责声明 本文为隐私保护教育内容，不是 OSINT 教程，不提供任何可复现的定位、识别、跟踪、骚扰或人肉搜索方法。请勿将本文任何内容用于他人。免责声明不意味着作者鼓励或允许任何非法使用；因不当使用造成的后果">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.gyhsic.top/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic1.jpeg">
+<meta property="og:image" content="https://www.gyhsic.top/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic4.jpeg">
 <meta property="og:image" content="https://www.gyhsic.top/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic2.jpeg">
 <meta property="og:image" content="https://www.gyhsic.top/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic3.jpeg">
 <meta property="article:published_time" content="2026-09-12T17:31:40.000Z">
-<meta property="article:modified_time" content="2026-09-13T05:15:40.682Z">
+<meta property="article:modified_time" content="2026-09-13T05:20:31.777Z">
 <meta property="article:author" content="广雅信息社">
 <meta property="article:tag" content="网络安全">
 <meta name="twitter:card" content="summary_large_image">
@@ -451,7 +452,7 @@
 <p>本文为隐私保护教育内容，不是 OSINT 教程，不提供任何可复现的定位、识别、跟踪、骚扰或人肉搜索方法。请勿将本文任何内容用于他人。免责声明不意味着作者鼓励或允许任何非法使用；因不当使用造成的后果由使用者自行承担。若本文内容仍可能被用于侵害权益，请联系删除。</p>
 </blockquote>
 <h2 id="第一，是火车站相关信息。"><a href="#第一，是火车站相关信息。" class="headerlink" title="第一，是火车站相关信息。"></a>第一，是火车站相关信息。</h2><p>这是笔者在五一假期（2026年5月1日），在某火车站站台上拍摄的照片（已经对信息泄漏源做出重点标注，且EXIF信息已经抹去，所以你别想着查EXIF了）。</p>
-<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic1.jpeg" srcset="/img/loading.gif" lazyload alt="pic1"></p>
+<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic1.jpeg" srcset="/img/loading.gif" lazyload alt="进站的动车组列车"></p>
 <p>我这一张是上传的原图，有兴趣的同学可以打开图片仔细查看红圈圈起来的信息</p>
 <p>没错，你会发现那是动车组上的车组信息：</p>
 <p>&#9;<em><strong>CRH380B-3727</strong></em></p>
@@ -459,13 +460,14 @@
 <p>为什么？5月1日，你确定有人这么闲，专门跑去外地旅游，而且还是“昨天晚上去，今天早上马上南下回广州”？那地点锁定在广州，大概是没什么疑问了。</p>
 <p>我们再分析站台环境。</p>
 <p>相信经常乘坐京广高速铁路的“广州北-广州南区间”往返花都和番禺两区的“跨区上学”群体最熟悉了。仔细看一下，这个站场是2台4线，采用站台连廊设计，另一侧是高架候车室站房，这种设计只可能是广州北站和广州东站，但是广州东站的站台环境不符合这个特征，因为广州东站没有大面积的露天，且广州东的站台有大量立柱——那就是广州北站了。</p>
+<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic4.jpeg" srcset="/img/loading.gif" lazyload alt="广州东站站台环境"></p>
 <p>熟悉广州北站的同学肯定就要指出来了，这是广州北站的三号站台。并且根据拍摄方向来看，这个拍摄方向是西南方向，图片内的动车组显然还在继续进站，毕竟如果是8编组的动车组，停车位置肯定比这个位置靠后（图中实则是长编动车组6号&#x2F;10号车厢的位置，如果是短编组，那么车头会出现在9号或8号车厢的停车位置），并且结合CRH380B型只有8节编组，那么这个车次已经可以确定是由CRH380B重联担当的了（因为CRH380系列只能同型号重联，例如CRH380D重联CRH380D，而无法重联CRH380A）。</p>
 <p>再根据此时的方位来分析阴影，可以得出太阳光照来自于东边（阴影从站台到股道），那这张照片大概率是在早上拍摄的，那我们就可以去“路路通”APP查询广州北站的时刻表了，因为路路通相较于12306，多了车组号的查看功能。前面已经推导过了，查看的时候直接去看重联动车组的车次就行了。</p>
 <p>诶，功夫不负有心人啊，是G9631次！终点站是广州火车站，又是一个在直达荔湾&#x2F;越秀的地铁开通之前，试图通过高铁来快速、舒适地往返花都和老三区的人。在这张照片被分析后，我可能就会得到一个免费的“惊喜接站”服务了（如果前往“接站”的是一名不法分子，后果将不堪设想）。</p>
 <h2 id="第二，是忘记错峰发布的旅游照片"><a href="#第二，是忘记错峰发布的旅游照片" class="headerlink" title="第二，是忘记错峰发布的旅游照片"></a>第二，是忘记错峰发布的旅游照片</h2><p>这是笔者在前往某个城市旅游时的随手一拍（已经抹去EXIF信息）。</p>
-<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic2.jpeg" srcset="/img/loading.gif" lazyload alt="pic2"></p>
+<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic2.jpeg" srcset="/img/loading.gif" lazyload alt="旅游图片"></p>
 <p>我们随便找一个AI，发给他：</p>
-<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic3.jpeg" srcset="/img/loading.gif" lazyload alt="pic3"></p>
+<p><img src="/posts/d0a036a0-aecf-11f1-b362-3bd53c9bdb39/pic3.jpeg" srcset="/img/loading.gif" lazyload alt="千问AI查询图片"></p>
 <p>你看，地点马上就告诉你了。是深圳莲花山公园，拍摄的是福田的平安金融中心。仔细看一看地图，平安金融中心在深圳市民广场附近，而深圳市民广场位于莲花山公园的南侧，所以这张照片很可能是向南侧拍的。</p>
 <p>我们继续分析阴影。我们从花坛到地上的阴影和栏杆之间的入手，整体阴影较短，天空偏亮，因此断定拍摄时间大有可能是正午。于是我们就马上可以得出这段行程信息：</p>
 <p>&emsp;正午，参观深圳莲花山公园，俯拍市民广场，可能下一站是市民广场或深圳地铁3号线。</p>
